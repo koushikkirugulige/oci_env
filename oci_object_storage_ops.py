@@ -13,7 +13,9 @@ logging.getLogger('oci').setLevel(logging.DEBUG)
 config = from_file()
 config = from_file(profile_name="mumbai_free")
 
-bucket_name = '<bucket-name>'
+bucket_name = '<bucket-name>' 
+#bucket_name = 'koushik-bucket'
+#namespace_name = 'bmt26qqdncmt'
 namespace_name = '<namespace>'
 
 max_retry_timeout = 16**2
@@ -116,8 +118,8 @@ def upload_file(file_path, file_name):
 
 
 
-file_path = '/Users/kkirugul/Documents/OCI Training/oci_env/Docker_info.md'
-file_name = 'Docker_info.md'
+file_path = '<file_path with file name>'
+file_name = '<Uploaded File Name>'
 
 upload_file(file_path,file_name)
 list_objects()
